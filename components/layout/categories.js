@@ -1,5 +1,6 @@
-// With the Rails-React Gem, do not need to require 'react' and 'react-dom'
-// With Rails, can use the react_component shortcut - RenderDOM not needed
+// var React = require('react')
+// var ReactDOM = require('react-dom')
+// import React from 'react';
 
 var Categories = React.createClass({
 	
@@ -54,6 +55,7 @@ var Categories = React.createClass({
 	}
 })
 
+export default Categories;
 
 // Use for multiple styles:
 // style={Object.assign(categoryBorderStyle, categoryLetterStyle)}
