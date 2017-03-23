@@ -1,5 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var App = require('./app.js');
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
 // import { browserHistory } from 'react-router';
 
@@ -9,28 +13,9 @@ import ReactDOM from 'react-dom';
 // import Portfolio from './pages/Portfolio/Portfolio';
 // import NotFound from './pages/NotFound/NotFound';
 
-var App = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <div id='main-nav'>
-          <h1 id='name-text'>TRAVIS A. ROY</h1>
-          <h2 id='title-text'>[ WEB DEVELOPER ]</h2>
-        </div>
-        <div id='main-content'>
-        
-        </div>
-      </div>
-    )
-  }
-});
-
 ReactDOM.render(
-  <Router history={ReactRouter.hashHistory}>
-    <Route path="/" component={App}>
-    </Route>
-  </Router>,
-  document.querySelector("#root")
+  <App />,
+  document.getElementById("root")
 );
 
 
