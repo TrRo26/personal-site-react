@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Nord Medium';
+  src: url("/assets/NordMedium.ttf") format("truetype");
+}
+
+/*$font-stack: Nord Medium;
+$color-cream: #FDF3E7;
+$color-fire: #C63D0F;
+$color-charcoal: #3B3738;
+$color-olive: #7E8F7C;*/
+
+.main {
+	background-color: #FDF3E7; /*$color-cream*/
+}
+
+#main-nav {
+	background-color: #C63D0F; /*$color-fire*/
+	padding: 10px;
+
+}
+
+#name-text {
+	font: 600% NordMedium;
+	color: #3B3738; /*$color-charcoal*/
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+#title-text {
+	font: 300% NordMedium; /*$font-stack*/
+	color: #3B3738; /*$color-charcoal*/
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+/*#nav-text {
+	font: 100% $font-stack;
+	text-align: center;
+	color: $color-cream;
+	letter-spacing: 1px;
+}*/
