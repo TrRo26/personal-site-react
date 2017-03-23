@@ -1,12 +1,11 @@
 
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Travis A. Roy</title>
-
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/header.css" />
-    
     <!-- SCRIPTS IF ENVIRONMENT NOT SET UP -->
     <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
@@ -16,27 +15,37 @@
   
   <body class='main'>
   	
-  	<div id='main-nav'>
-  		<h1 id='name-text'>TRAVIS A. ROY</h1>
-  		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+  	<div id='container'>
+      <!--  MAIN DIV CONTAINER -->
   	</div>
+    
+    <script type='text/babel'>
+      var App = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <div id='main-nav'>
+                <h1 id='name-text'>TRAVIS A. ROY</h1>
+                <h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+              </div>
+              <div id='main-content'>
+                <h2>Main Content Here</h2>
+              </div>
+            </div>
+          )
+        }
+      });
 
-    <iframe src="index.html"></iframe>
-
-<!-- 
-  <div id="container">
-  </div>
-  
-  <script type="text/babel">
-    var destination = document.querySelector("#container");
-  
-    ReactDOM.render(
-      <div>
-        Hello!
-      </div>,
-      destination
-    );
-  </script> -->
+      ReactDOM.render(
+        <div>
+          <App />
+        </div>,
+        document.querySelector("#container")
+      );
+    </script>
     
   </body>
 </html>
+
+
+<!-- <iframe src="../javascripts/layout/categories.jsx"></iframe> -->

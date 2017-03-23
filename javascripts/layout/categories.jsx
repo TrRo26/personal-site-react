@@ -54,5 +54,6 @@ var Categories = React.createClass({
 	}
 })
 
+
 // Use for multiple styles:
 // style={Object.assign(categoryBorderStyle, categoryLetterStyle)}
