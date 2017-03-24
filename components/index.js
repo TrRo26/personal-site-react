@@ -10,10 +10,12 @@ var BlogDetails = require('./content/blog_details.js')
 
 ReactDOM.render(
 	<div>
-    <div id='main-nav'>
-      <h1 id='name-text'> TRAVIS A. ROY </h1>
-      <h2 id='title-text'> [ WEB DEVELOPER ] </h2>
-    </div>
+		<Headroom>
+	    <div id='main-nav'>
+	      <h1 id='name-text'> TRAVIS A. ROY </h1>
+	      <h2 id='title-text'> [ WEB DEVELOPER ] </h2>
+	    </div>
+	  </Headroom>
   	<Router>
 	  	<div>
 	  		<Route exact path='/' component={App} />
