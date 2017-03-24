@@ -1,22 +1,14 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var App = require('./app.js');
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+var React = require('react')
+var ReactDOM = require('react-dom')
+var App = require('./app.js')
 
 // import { browserHistory } from 'react-router';
-
 // import { Router, Route } from 'react-router';
-// import About from './pages/Home/About';
-// import Contact from './pages/Contact/Contact';
-// import Portfolio from './pages/Portfolio/Portfolio';
-// import NotFound from './pages/NotFound/NotFound';
 
 ReactDOM.render(
   <App />,
   document.getElementById("root")
-);
+)
 
 
 
@@ -62,14 +54,6 @@ ReactDOM.render(
 
 
 
-
-
-
-
-
-
-
-
 // APP JS
 
 // import React, { Component } from 'react';
@@ -97,24 +81,3 @@ ReactDOM.render(
 // }
 
 // export default App;
-
-
-
-
-
-
-
-
-
-// <h2>HELLO</h2>
-
-// <script type="text/babel">
-//   var destination = document.querySelector("#container");
-
-//   ReactDOM.render(
-//     <div>
-//       Hello!
-//     </div>,
-//     destination
-//   );
-// </script>

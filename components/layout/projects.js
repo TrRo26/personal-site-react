@@ -1,6 +1,6 @@
+var React = require('react')
 
 var Projects = React.createClass({
-
 	render() {
 		return (
 			<div>
@@ -16,6 +16,8 @@ var Projects = React.createClass({
 		)
 	}
 })
+
+module.exports = Projects
 
 // class Button extends React.Component {
 //     constructor(props) {

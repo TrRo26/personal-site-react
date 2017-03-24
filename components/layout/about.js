@@ -1,6 +1,6 @@
+var React = require('react')
 
 var About = React.createClass({
-  
   render() {
     return (
     	<div>
@@ -14,6 +14,7 @@ var About = React.createClass({
   }
 })
 
+module.exports = About
 
 // Fade in upon image load
 // var Image = React.createClass({

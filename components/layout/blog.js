@@ -1,6 +1,6 @@
+var React = require('react')
 
 var Blog = React.createClass({
-	
 	render() {
 		return (
 			<div>
@@ -12,3 +12,5 @@ var Blog = React.createClass({
 		)
 	}
 })
+
+module.exports = Blog
