@@ -9,11 +9,13 @@ var Categories = React.createClass({
       vis: 'visible'
     }
   },
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault()
     var newState = {
       vis: 'hidden'
     }
     this.setState(newState)
+    // this.context.router.push('/about')
   },
   render() {
     var categoryStyle = {
@@ -43,15 +45,10 @@ var Categories = React.createClass({
 	}
 })
 
+// LEFT OFF HERE - WORKING ON ROUTING MAIN CATEGORIES TO DETAILS
+
+// Categories.contextTypes = {
+//   router: React.PropTypes.object.isRequired
+// };
+
 module.exports = Categories
-
-// Use for multiple styles:
-// style={Object.assign(categoryBorderStyle, categoryLetterStyle)}
-
-// Need to find DRY way of adding individual category css:
-// var projectImage = {
-//   backgroundColor: '#FDF3E7',
-//   // backgroundImage: "url('./cat_project_bw.jpg')",  //find proper syntax for this to work
-//   backgroundSize: 'contain',
-//   backgroundRepeat: 'no-repeat'
-// }

@@ -9,14 +9,20 @@ var ProjectsDetails = require('./content/projects_details.js')
 var BlogDetails = require('./content/blog_details.js')
 
 ReactDOM.render(
-  <Router>
-  	<div>
-  		<Route exact path='/' component={App} />
-  		<Route path='/about' component={AboutDetails} />
-  		<Route path='/projects' component={ProjectsDetails} />
-  		<Route path='/blog' component={BlogDetails} />
-   	</div>
-  </Router>,
+	<div>
+    <div id='main-nav'>
+      <h1 id='name-text'> TRAVIS A. ROY </h1>
+      <h2 id='title-text'> [ WEB DEVELOPER ] </h2>
+    </div>
+  	<Router>
+	  	<div>
+	  		<Route exact path='/' component={App} />
+	  		<Route path='/about' component={AboutDetails} />
+	  		<Route path='/projects' component={ProjectsDetails} />
+	  		<Route path='/blog' component={BlogDetails} />
+	   	</div>
+  	</Router>
+  </div>,
   document.getElementById("root")
 )
 
