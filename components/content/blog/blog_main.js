@@ -1,6 +1,6 @@
 var React = require('react')
 
-var BlogDetails = React.createClass({	
+var BlogMain = React.createClass({	
 	render() {
 		return(
 			<div>
@@ -13,4 +13,4 @@ var BlogDetails = React.createClass({
 	}
 })
 
-module.exports = BlogDetails
+module.exports = BlogMain
