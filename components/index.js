@@ -1,18 +1,58 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-var App = require('./app.js')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
-// import { browserHistory } from 'react-router';
-// import { Router, Route } from 'react-router';
+var App = require('./app.js')
+var AboutDetails = require('./content/about_details.js')
+var ProjectsDetails = require('./content/projects_details.js')
+var BlogDetails = require('./content/blog_details.js')
 
 ReactDOM.render(
-  <App />,
+  <Router>
+  	<div>
+  		<Route exact path='/' component={App} />
+  		<Route path='/about' component={AboutDetails} />
+  		<Route path='/projects' component={ProjectsDetails} />
+  		<Route path='/blog' component={BlogDetails} />
+   	</div>
+  </Router>,
   document.getElementById("root")
 )
 
 
 
+// import React from 'react'
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Link
+// } from 'react-router-dom'
 
+// const BasicExample = () => (
+//   <Router>
+//     <div>
+//       <ul>
+//         <li><Link to="/">Home</Link></li>
+//         <li><Link to="/about">About</Link></li>
+//         <li><Link to="/topics">Topics</Link></li>
+//       </ul>
+
+//       <hr/>
+
+//       <Route exact path="/" component={Home}/>
+//       <Route path="/about" component={About}/>
+//       <Route path="/topics" component={Topics}/>
+//     </div>
+//   </Router>
+// )
+
+
+
+
+
+
+// JUSTIN'S CODE
 
 // INDEX JS
 
