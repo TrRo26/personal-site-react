@@ -1,6 +1,6 @@
+var React = require('react')
 
-var AboutDetails = React.createClass({
-	
+var AboutDetails = React.createClass({	
 	render() {
 		return(
 			<div>
@@ -18,3 +18,5 @@ var AboutDetails = React.createClass({
 		)
 	}
 })
+
+module.exports = AboutDetails
