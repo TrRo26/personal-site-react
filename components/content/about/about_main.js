@@ -1,15 +1,24 @@
 var React = require('react')
+var Collapse = require('react-bootstrap').Collapse;
+var AboutSkills = require('./skills.js')
+var AboutEducation = require('./education.js')
+var AboutExperience = require('./experience.js')
 
-var AboutDetails = React.createClass({	
+var AboutMain = React.createClass({
+	getInitialState() {
+		return(
+			this.state = {}
+		)
+	},
 	render() {
 		var title = {
 			textAlign: 'center',
-			margin: '10px',
 			fontSize: 30
 		}
 		var aboutContainer = {
-      border: '1px solid black',
-      margin: '10px',
+      margin: '1%',
+      marginLeft: '5%',
+      marginRight: '5%',
       padding: '10px'
     }
 		return(
@@ -29,59 +38,14 @@ var AboutDetails = React.createClass({
 						I have also been lucky enough to have had the chance to spend nearly half a year traveling throughout Western and Eastern Europe, a year and a half working and traveling in Australia and New Zealand, and two years studying and working in Sweden for graduate school. I am absolutely fascinated by different cultures and strongly believe that experiencing the differences those cultures have to offer is essential to a healthy perspective in todays world.
 					</p>
 				</div>
-				<div id='techSkills'>
-					<div style={aboutContainer}>
-						<h2>Tech Skills</h2>
-						<div id='languages' style={aboutContainer}>
-							<h3>Languages</h3>						
-							<li>JavaScript</li>
-							<li>Ruby</li>
-							<li>Swift</li>
-						</div>
-						<div id='frameworks' style={aboutContainer}>
-							<h3>Frameworks/Libraries</h3>
-							<li>React</li>
-							<li>JQuery</li>
-							<li>Rails</li>
-							<li>Sinatra</li>
-							<li>Xcode</li>
-						</div>
-						<div id='everythingElse' style={aboutContainer}>
-							<h3>Everything else</h3>
-							<li>MySQL</li>
-							<li>PostgreSQL</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Rspec</li>
-							<li>Jasmine</li>
-							<li>JSON</li>
-							<li>AJAX</li>
-							<li>Agile</li>
-						</div>
-					</div>
-				</div>
-				<div id='education' style={aboutContainer}>
-					<h2>Education</h2>
-					<div id='devBootcamp' style={aboutContainer}>
-						<h3>Dev Bootcamp Graduate</h3>
-						<h4>Dev Bootcamp - Chicago, Illinois</h4>
-					</div>
-					<div id='stockholmUniversity' style={aboutContainer}>
-						<h3>Master of Science in International and Comparative Education</h3>
-						<h4>Stockholm University - Stockholm, Sweden</h4>
-					</div>
-					<div id='michiganStateUniversity' style={aboutContainer}>
-						<h3>Bachelor of Arts in Hospitality Business</h3>
-						<h4>Michigan State University - East Lansing, Michigan</h4>
-					</div>
-				</div>
-				<div id='experience' style={aboutContainer}>
-					<h2>Experience</h2>
-					<p>For more details on previous experience, please feel free to take a look at my LinkedIn profile: https://www.linkedin.com/in/travisroy/</p>
-				</div>
+
+				<AboutSkills />
+				<AboutEducation />
+				<AboutExperience />
+
 			</div>
 		)
 	}
 })
 
-module.exports = AboutDetails
+module.exports = AboutMain
