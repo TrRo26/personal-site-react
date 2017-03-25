@@ -6,7 +6,7 @@ var ProjectMain = React.createClass({
 			textAlign: 'center',
 			fontSize: 30
 		}
-		var aboutContainer = {
+		var container = {
 			border: '1px solid black',
       margin: '1%',
       marginLeft: '5%',
@@ -18,7 +18,7 @@ var ProjectMain = React.createClass({
 
 				<h1 style={title}>PROJECTS</h1>
 			
-				<div id='projectRemind' style={aboutContainer}>
+				<div id='projectRemind' style={container}>
 					<h2>Remind</h2>
 					<h3>Tech:</h3>
 					<p>Ruby on Rails, Xcode, Swift, Google Maps API and Heroku</p>
@@ -31,7 +31,7 @@ var ProjectMain = React.createClass({
 					<p>My main focus throughout the project was in researching and implementing the Core Motion Framework used to constrain push notifications to a set distance moved by the user, preventing extraneous notifications. As a result, I gained a solid foundation in Xcode and Swift and a broader understanding of mobile development as a whole.</p>
 				</div>
 			
-				<div id='projectBattleship' style={aboutContainer}>
+				<div id='projectBattleship' style={container}>
 					<h2>Battleship Clone</h2>
 					<h3>Tech:</h3>
 					<p>Ruby, Rails, JQuery, AJAX</p>
