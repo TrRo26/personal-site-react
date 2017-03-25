@@ -6,7 +6,7 @@ var BlogMain = React.createClass({
 			textAlign: 'center',
 			fontSize: 30
 		}
-		var aboutContainer = {
+		var container = {
       margin: '1%',
       marginLeft: '5%',
       marginRight: '5%',
@@ -17,7 +17,7 @@ var BlogMain = React.createClass({
 
 				<h1 style={title}>BLOG</h1>
 
-				<div id='summary' style={aboutContainer}>
+				<div id='summary' style={container}>
 					<p>Eventually...blog posts will go here.</p>
 				</div>
 				

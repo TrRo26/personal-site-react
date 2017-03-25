@@ -8,7 +8,7 @@ var AboutExperience = React.createClass({
 		)
 	},
 	render() {
-		var aboutContainer = {
+		var container = {
       border: '1px solid black',
       margin: '1%',
       marginLeft: '5%',
@@ -16,7 +16,7 @@ var AboutExperience = React.createClass({
       padding: '10px'
     }
 		return(
-			<div id='experience' style={aboutContainer}>
+			<div id='experience' style={container}>
 				<h2 onClick={ ()=> this.setState({ open: !this.state.open })}>Experience</h2>
 				<Collapse in={this.state.open}>
 					<div>
