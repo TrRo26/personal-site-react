@@ -1,5 +1,5 @@
-var React = require('react')
-var Collapse = require('react-bootstrap').Collapse;
+import React from 'react'
+import { Collapse, ProgressBar } from 'react-bootstrap'
 
 var AboutEducation = React.createClass({
 	getInitialState() {
@@ -39,4 +39,4 @@ var AboutEducation = React.createClass({
 	}
 })
 
-module.exports = AboutEducation
+export default AboutEducation

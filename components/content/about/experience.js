@@ -1,5 +1,5 @@
-var React = require('react')
-var Collapse = require('react-bootstrap').Collapse;
+import React from 'react'
+import { Collapse } from 'react-bootstrap'
 
 var AboutExperience = React.createClass({
 	getInitialState() {
@@ -28,4 +28,4 @@ var AboutExperience = React.createClass({
 	}
 })
 
-module.exports = AboutExperience
+export default AboutExperience
