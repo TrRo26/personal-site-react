@@ -1,6 +1,5 @@
-var React = require('react')
-var Collapse = require('react-bootstrap').Collapse
-var ProgressBar = require('react-bootstrap').ProgressBar
+import React from 'react'
+import { Collapse, ProgressBar } from 'react-bootstrap'
 
 var AboutSkills = React.createClass({
 	getInitialState() {
@@ -129,10 +128,4 @@ var AboutSkills = React.createClass({
 	}
 })
 
-module.exports = AboutSkills
-
-// SKILL BAR EXAMPLE: http://codepen.io/ajaykarwal/pen/bqwWNy
-// An HSL color value is specified with: hsl(hue, saturation, lightness). 
-// Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. 
-// Saturation is a percentage value; 0% means a shade of gray and 100% is the full color.
-// Lightness is also a percentage; 0% is black, 100% is white.
+export default AboutSkills

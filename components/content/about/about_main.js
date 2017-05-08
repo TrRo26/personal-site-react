@@ -1,8 +1,9 @@
-var React = require('react')
-var Collapse = require('react-bootstrap').Collapse;
-var AboutSkills = require('./skills.js')
-var AboutEducation = require('./education.js')
-var AboutExperience = require('./experience.js')
+import React from 'react'
+import { Collapse } from 'react-bootstrap'
+
+import AboutSkills from './skills.js'
+import AboutEducation from './education.js'
+import AboutExperience from './experience.js'
 
 var AboutMain = React.createClass({
 	getInitialState() {
@@ -48,4 +49,4 @@ var AboutMain = React.createClass({
 	}
 })
 
-module.exports = AboutMain
+export default AboutMain

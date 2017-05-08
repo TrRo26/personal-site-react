@@ -1,19 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { render } from 'react-dom'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
-var App = require('./app.js')
-var AboutMain = require('./content/about/about_main.js')
-var ProjectsMain = require('./content/projects/projects_main.js')
-var BlogMain = require('./content/blog/blog_main.js')
+import App from './app.js'
+import AboutMain from './content/about/about_main.js'
+import ProjectsMain from './content/projects/projects_main.js'
+import BlogMain from './content/blog/blog_main.js'
 
 ReactDOM.render(
 	<div>
-    <div id='main-nav'>
+    <nav id='main-nav'>
       <h1 id='name-text'> TRAVIS A. ROY </h1>
       <h2 id='title-text'> [ WEB DEVELOPER ] </h2>
-    </div>
+    </nav>
   	<Router>
 	  	<div>
 	  		<Route exact path='/' component={App} />
