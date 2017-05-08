@@ -1,4 +1,5 @@
-var React = require('react')
+import React from 'react'
+import { Link } from 'react-router'
 
 var About = React.createClass({
   render() {
@@ -14,7 +15,7 @@ var About = React.createClass({
   }
 })
 
-module.exports = About
+export default About
 
 // Fade in upon image load
 // var Image = React.createClass({

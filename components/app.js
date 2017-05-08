@@ -1,5 +1,6 @@
-var React = require('react')
-var Categories = require('./layout/categories.js')
+import React from 'react'
+import Categories from './layout/categories.js'
+import { Link } from 'react-router'
 
 var App = React.createClass({
   render: function() {
@@ -11,4 +12,6 @@ var App = React.createClass({
   }
 })
 
-module.exports = App
+export default App
+
+// <h4><Link to='/about'>Dis work?</Link></h4>
