@@ -1,4 +1,4 @@
-var React = require('react')
+import React from 'react'
 
 var Blog = React.createClass({
 	render() {
@@ -13,4 +13,4 @@ var Blog = React.createClass({
 	}
 })
 
-module.exports = Blog
+export default Blog

@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Router, Route } from 'react-router-dom'
-
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import App from './app.js'
 import AboutMain from './content/about/about_main.js'
 import ProjectsMain from './content/projects/projects_main.js'

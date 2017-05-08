@@ -1,7 +1,7 @@
-var React = require('react')
-var About = require('./about.js')
-var Projects = require('./projects.js')
-var Blog = require('./blog.js')
+import React from 'react'
+import About from './about.js'
+import Projects from './projects.js'
+import Blog from './blog.js'
 
 var Categories = React.createClass({
   getInitialState() {
@@ -45,10 +45,4 @@ var Categories = React.createClass({
 	}
 })
 
-// LEFT OFF HERE - WORKING ON ROUTING MAIN CATEGORIES TO DETAILS
-
-// Categories.contextTypes = {
-//   router: React.PropTypes.object.isRequired
-// };
-
-module.exports = Categories
+export default Categories

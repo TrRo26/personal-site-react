@@ -1,4 +1,4 @@
-var React = require('react')
+import React from 'react'
 
 var Projects = React.createClass({
 	render() {
@@ -17,7 +17,7 @@ var Projects = React.createClass({
 	}
 })
 
-module.exports = Projects
+export default Projects
 
 // class Button extends React.Component {
 //     constructor(props) {

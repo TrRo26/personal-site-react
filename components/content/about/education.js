@@ -1,5 +1,5 @@
 import React from 'react'
-import { Collapse, ProgressBar } from 'react-bootstrap'
+import { Collapse } from 'react-bootstrap'
 
 var AboutEducation = React.createClass({
 	getInitialState() {

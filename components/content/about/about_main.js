@@ -1,6 +1,5 @@
 import React from 'react'
 import { Collapse } from 'react-bootstrap'
-
 import AboutSkills from './skills.js'
 import AboutEducation from './education.js'
 import AboutExperience from './experience.js'
